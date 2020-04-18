@@ -9,7 +9,6 @@ final class NegateButtonClickListener implements View.OnClickListener {
     private final EditText newNumber;
 
     NegateButtonClickListener(EditText newNumber){
-
         this.newNumber = newNumber;
     }
     @Override
