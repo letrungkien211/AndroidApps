@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Top 10 Downloader</string>
+    <string name="top10_free_apps_url">http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topfreeapplications/limit=%d/xml</string>
+    <string name="top10_paid_apps_url">http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/toppaidapplications/limit=%d/xml</string>
+    <string name="top10_songs_url">http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/ws/RSS/topsongs/limit=%d/xml</string>
+
+    <string name="free_apps">Free Apps</string>
+    <string name="songs">Songs</string>
+    <string name="paid_apps">Paid Apps</string>
+    <string name="top10">Top 10</string>
+    <string name="top25">Top 25</string>
+    <string name="refresh">Refresh</string>
+
+</resources>
