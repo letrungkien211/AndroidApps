@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.List;
+import java.util.regex.Pattern;
 
 final class FeedAdapter<T extends FeedEntry> extends ArrayAdapter<FeedEntry> {
     private final int layoutResource;
@@ -45,7 +46,6 @@ final class FeedAdapter<T extends FeedEntry> extends ArrayAdapter<FeedEntry> {
 
         viewHolder.tvName.setText(currentApp.getName());
         viewHolder.tvArtist.setText(currentApp.getArtist());
-        viewHolder.tvSummary.setText(currentApp.getSummary());
 
         return convertView;
     }
@@ -53,12 +53,10 @@ final class FeedAdapter<T extends FeedEntry> extends ArrayAdapter<FeedEntry> {
     private class ViewHolder {
         final TextView tvName;
         final TextView tvArtist;
-        final TextView tvSummary;
 
         ViewHolder(View v) {
             this.tvName = v.findViewById(R.id.tvName);
             this.tvArtist = v.findViewById(R.id.tvArtist);
-            this.tvSummary = v.findViewById(R.id.tvSummary);
         }
     }
 }
