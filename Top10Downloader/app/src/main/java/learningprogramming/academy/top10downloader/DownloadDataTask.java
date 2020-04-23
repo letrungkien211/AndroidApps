@@ -23,6 +23,8 @@ final class DownloadDataTask extends AsyncTask<String, Void, String> {
 
         parseApplications.parse(s);
         listView.setAdapter(new FeedAdapter<FeedEntry>(context, R.layout.list_record, parseApplications.getApplications()));
+
+        Log.i(TAG, "onPostExecute: end");
     }
 
     @Override

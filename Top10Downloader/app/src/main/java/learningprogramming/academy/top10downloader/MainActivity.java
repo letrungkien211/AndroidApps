@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private CachedString fullFeedUrl = new CachedString("");
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -54,12 +54,6 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt(LIMIT, limit);
         super.onSaveInstanceState(outState);
         Log.i(TAG, "onSaveInstanceState: end");
-    }
-
-    @Override
-    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
-        Log.i(TAG, "onRestoreInstanceState: start");
-        super.onRestoreInstanceState(savedInstanceState);
     }
 
     @Override
@@ -111,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
         private String value;
         private String cached;
         CachedString(@NonNull String value) {
+            if(value==null) throw new IllegalArgumentException("value most not be null");
             this.value = value;
         }
 
