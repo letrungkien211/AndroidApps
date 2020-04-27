@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 final class ParseApplications {
+
     private ArrayList<FeedEntry> applications;
 
     ParseApplications() {

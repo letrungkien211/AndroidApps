@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="youtube_api_key" templateMergeStrategy="preserve" translatable="false">AIzaSyAfJz10ZbQFY6SlR5XaIP6Fuvqym8PGjH0</string>
+    <string name="youtube_video_id">CevxZvSJLk8</string>
+    <string name="youtube_playlist">RDCevxZvSJLk8</string>
+</resources>
